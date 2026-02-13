@@ -2,22 +2,22 @@
 	order forward_proxy first
 	auto_https off
 }
-:443 , hk.martify.eu.cc:443 {
+:443 , hk.eu.cc:443 {
 	tls /etc/nginx/ssl/fullchain.cer /etc/nginx/ssl/key.pem
 	route {
 		forward_proxy {
-			basic_auth 3UUdxN qF7yvTpF
+			basic_auth 3UUxN qF7yvTpF
 			hide_ip
 			hide_via
 			probe_resistance
 		}
 		forward_proxy {
-			basic_auth uM8Jp HWCMnUnJ
+			basic_auth u8Jp HWCMnUnJ
 			hide_ip
 			hide_via
 			probe_resistance
 		}
-		reverse_proxy https://pan.ymxx.net {
+		reverse_proxy https://pan.xxxx.net {
 			header_up Host {upstream_hostport}
 			header_up X-Forwarded-Host {host}
 		}
