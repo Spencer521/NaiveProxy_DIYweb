@@ -2,7 +2,10 @@
 
 NaiveProxy
 
+https://github.com/crazypeace/naive
+
 https://github.com/klzgrad/forwardproxy/releases
+
 https://bulianglin.com/archives/naive.html
 
 apt install golang-go
