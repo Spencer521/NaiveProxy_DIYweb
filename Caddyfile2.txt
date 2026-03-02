@@ -1,0 +1,21 @@
+:443 , s782.xyz {
+	tls swork@gmail.com
+	route {
+		forward_proxy {
+			basic_auth 3U2N qF7yv26TpF
+			hide_ip
+			hide_via
+			probe_resistance
+		}
+		forward_proxy {
+			basic_auth uM5p HWCM39nUnJ
+			hide_ip
+			hide_via
+			probe_resistance
+		}
+		reverse_proxy https://pan.x.net {
+			header_up Host {upstream_hostport}
+			header_up X-Forwarded-Host {host}
+		}
+	}
+}
